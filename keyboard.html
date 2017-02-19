@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Keyboard</title>
+		<link rel="stylesheet" type="text/css" href="keyboard.css"/>
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="keyboard.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="keyBoard">
+			<!--Fn功能键-->
+			<ul class="funBoard">
+				<li class="funEsc hs code" id="c27">Esc</li>
+				<li class="fun hs code" id="c112">F1</li>
+				<li class="fun hs code" id="c113">F2</li>
+				<li class="fun hs code" id="c114">F3</li>
+				<li class="fun hs code" id="c115">F4</li>
+				<li class="fun hs code" id="c116">F5</li>
+				<li class="fun hs code" id="c117">F6</li>
+				<li class="fun hs code" id="c118">F7</li>
+				<li class="fun hs code" id="c119">F8</li>
+				<li class="fun hs code" id="c120">F9</li>
+				<li class="fun hs code" id="c121">F10</li>
+				<li class="fun hs code" id="c122">F11</li>
+				<li class="fun hs code" id="c123">F12</li>
+				<li class="fun hs code" id="c45">Insert</li>
+				<li class="fun hs code">PrtSc</li>
+				<li class="R funDel hs code" id="c46">Delete</li>
+				<li class="R funHome hs code" id="c36">Home</li>
+				<li class="R funEnd hs code" id="c35">End</li>
+				<li class="R funPageUp hs code" id="c33">PgUp</li>
+				<li class="R funPageDn hs code" id="c34">PgDn</li>
+			</ul>
+			<!--数字键-->
+			<ul class="numBoard clear">
+				<li class="w h m code" id="c192"><span class="shift char">~</span><span class="char">`</span></li>
+				<li class="w h m code" id="c49"><span class="shift char">!</span><span class="char">1</span></li>
+				<li class="w h m code" id="c50"><span class="shift char">@</span><span class="char">2</span></li>
+				<li class="w h m code" id="c51"><span class="shift char">#</span><span class="char">3</span></li>
+				<li class="w h m code" id="c52"><span class="shift char">$</span><span class="char">4</span></li>
+				<li class="w h m code" id="c53"><span class="shift char">%</span><span class="char">5</span></li>
+				<li class="w h m code" id="c54"><span class="shift char">^</span><span class="char">6</span></li>
+				<li class="w h m code" id="c55"><span class="shift char">&amp;</span><span class="char">7</span></li>
+				<li class="w h m code" id="c56"><span class="shift char">*</span><span class="char">8</span></li>
+				<li class="w h m code" id="c57"><span class="shift char">(</span><span class="char">9</span></li>
+				<li class="w h m code" id="c48"><span class="shift char">)</span><span class="char">0</span></li>
+				<li class="w h m code" id="c189"><span class="shift char">_</span><span class="char">-</span></li>
+				<li class="w h m code" id="c187"><span class="shift char">+</span><span class="char">=</span></li>
+				<li class="funBack w h m lh code" id="c8">Backspace</li>
+				<li class="R numLock h m lh code" id="c144">NumLock</li>
+				<li class="char R numDiv h m lh code" id="c111">/</li>
+				<li class="char R numMul h m lh code" id="c106">*</li>
+				<li class="char R numSub h m lh code" id="c109">-</li>
+			</ul>
+			<!--主键盘-->
+			<dl class="mainBoard clear">
+				<!--第一排-->
+				<dt>
+					<dd class="funTab h m lh code" id="c9">Tab</dd>
+					<dd class="char w h m lh2 code" id="c81">Q</dd>
+					<dd class="char w h m lh2 code" id="c87">W</dd>
+					<dd class="char w h m lh2 code" id="c69">E</dd>
+					<dd class="char w h m lh2 code" id="c82">R</dd>
+					<dd class="char w h m lh2 code" id="c84">T</dd>
+					<dd class="char w h m lh2 code" id="c89">Y</dd>
+					<dd class="char w h m lh2 code" id="c85">U</dd>
+					<dd class="char w h m lh2 code" id="c73">I</dd>
+					<dd class="char w h m lh2 code" id="c79">O</dd>
+					<dd class="char w h m lh2 code" id="c80">P</dd>
+					<dd class="w h m code" id="c219"><span class="shift char">{</span><span class="char">[</span></dd>
+					<dd class="w h m code" id="c221"><span class="shift char">}</span><span class="char">]</span></dd>
+					<dd class="w h m code" id="c220"><span class="shift char">|</span><span class="char">\</span></dd>
+					<dd class="char R num7 h m lh code" id="c103">7</dd>
+					<dd class="char R num8 h m lh code" id="c104">8</dd>
+					<dd class="char R num9 h m lh code" id="c105">9</dd>
+					<dd class="char R numAdd h m lh code" id="c107">+</dd>
+				</dt>
+				<!--第二排-->
+				<dt class="clear">
+					<dd class="funCapLock h m lh code" id="c20">CapsLock</dd>
+					<dd class="char w h m lh2 code" id="c65">A</dd>
+					<dd class="char w h m lh2 code" id="c83">S</dd>
+					<dd class="char w h m lh2 code" id="c68">D</dd>
+					<dd class="char w h m lh2 code" id="c70">F</dd>
+					<dd class="char w h m lh2 code" id="c71">G</dd>
+					<dd class="char w h m lh2 code" id="c72">H</dd>
+					<dd class="char w h m lh2 code" id="c74">J</dd>
+					<dd class="char w h m lh2 code" id="c75">K</dd>
+					<dd class="char w h m lh2 code" id="c76">L</dd>
+					<dd class="w h m code" id="c186"><span class="shift char">:</span><span class="char">;</span></dd>
+					<dd class="w h m code" id="c222"><span class="shift char">"</span><span class="char">'</span></dd>
+					<dd class="funEnter w h m lh code" id="m13">Enter</dd>
+					<dd class="char R num4 h m lh code" id="c100">4</dd>
+					<dd class="char R num5 h m lh code" id="c101">5</dd>
+					<dd class="char R num6 h m lh code" id="c102">6</dd>
+				</dt>
+				<!--第三排-->
+				<dt class="clear">
+					<dd class="funShiftL h m lh code" id="l16">Shift</dd>
+					<dd class="char w h m lh2 code" id="c90">Z</dd>
+					<dd class="char w h m lh2 code" id="c88">X</dd>
+					<dd class="char w h m lh2 code" id="c67">C</dd>
+					<dd class="char w h m lh2 code" id="c86">V</dd>
+					<dd class="char w h m lh2 code" id="c66">B</dd>
+					<dd class="char w h m lh2 code" id="c78">N</dd>
+					<dd class="char w h m lh2 code" id="c77">M</dd>
+					<dd class="w h m code" id="c188"><span class="shift char"><</span><span class="char">,</span></dd>
+					<dd class="w h m code" id="c190"><span class="shift char">></span><span class="char">.</span></dd>
+					<dd class="w h m code" id="c191"><span class="shift char">?</span><span class="char">/</span></dd>
+					<dd class="funShiftR h m lh code" id="r16">Shift</dd>
+					<dd class="arrow h m lh code" id="c38">↑</dd>
+					<dd class="char R num1 h m lh code" id="c97">1</dd>
+					<dd class="char R num2 h m lh code" id="c98">2</dd>
+					<dd class="char R num3 h m lh code" id="c99">3</dd>
+					<dd class="R numEnter h m lh code" id="n13">Enter</dd>
+				</dt>
+				<dt class="clear">
+					<dd class="funCtrlL h m lh code" id="l17">Ctrl</dd>
+					<dd class="funFn h m lh">Fn</dd>
+					<dd class="funWin h m lh code" id="c91">Win</dd>
+					<dd class="funAltL h m lh code" id="l18">Alt</dd>
+					<dd class="funSpace h m lh code" id="c32">Space</dd>
+					<dd class="funAltR h m lh code" id="r18">Alt</dd>
+					<dd class="funMenu h m lh code" id="c93">Menu</dd>
+					<dd class="funCtrlR h m lh code" id="r17">Ctrl</dd>
+					<dd class="arrow m lh code" id="c37">←</dd>
+					<dd class="arrow m lh code" id="c40">↓</dd>
+					<dd class="arrow m lh code" id="c39">→</dd>
+					<dd class="char R num0 h m lh code" id="c96">0</dd>
+					<dd class="char R numDot h m lh code" id="c110">.</dd>
+				</dt>
+			</dl>
+		</div>
+		<div class="textArea">
+			<input type="text" class="input" placeholder="请在此输入......"/>
+			<div class="text"></div>
+		</div>
+		<div class="box"></div>
+	</body>
+</html>

@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #000;
+}
+ul{
+	list-style: none;
+}
+.keyBoard,.textArea{
+	width: 1210px;
+	margin: 20px auto;
+	background-color: #ccc;
+	overflow: hidden;
+	padding: 10px;
+	box-shadow: 1px 1px 20px #eee;
+	border-radius: 10px;
+}
+li,dd{
+	float: left;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #ccc;
+}
+/*tools*/
+span{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	text-align: left;
+	margin-left: 5px;
+}
+.shift{
+	line-height: 30px;
+}
+.main{
+	line-height: 20px;
+}
+.clear{
+	clear: both;
+}
+/*height*/
+.h{
+	height: 60px;
+}
+/*width*/
+.w{
+	width: 60px;
+}
+/*margin*/
+.m{
+	margin-top: 6px;
+	margin-right: 6px;
+}
+/*heightSmall*/
+.hs{
+	height: 26px;
+	line-height: 26px;
+	margin-right: 4px;
+}
+/*line-height*/
+.lh{
+	line-height: 60px;
+}
+.lh2{
+	text-align: left;
+	line-height: 40px;
+	text-indent: 10px;
+	font-size: 24px;
+}
+/*小键盘*/
+.R{
+	width: 55px;
+	margin-right: 6px;
+}
+/*Fn功能键*/
+.fun 				{ width: 55px; }
+.funEsc 		{ width: 60px; }
+.funDel 		{ width: 70px; }
+.funBack 		{ width: 102px; }
+.funTab 		{ width: 100px; }
+.funCapLock { width: 110px;}
+.funEnter 	{ width: 116px;}
+.funShiftL 	{ width: 124px;}
+.funShiftR 	{ width: 108px;}
+.funSpace 	{ width: 342px;}
+.funCtrlL 	{ width: 80px;}
+.funFn,.funWin,.funAltL,.funAltR,.funMenu
+	{ width: 56px;}
+.funCtrlR 	{ width: 94px;}
+.arrow 			{ width: 55px;}
+
+dl{
+	position: relative;
+}
+.numAdd,.numEnter {
+	height: 126px;
+	line-height: 126px;
+	position: absolute;
+	right: 0;
+}
+.numAdd{ 
+	top: 0px;
+}
+.numEnter{
+	top: 132px;
+}
+
+/*按下去*/
+li:hover,dd:hover,.keydown{
+	box-shadow: 1px 1px 4px #ccc inset;
+	background-color: rgba(0,0,0,.9);
+	cursor: pointer;
+}
+
+/*文本区*/
+input,.text{
+	width: 100%;
+	border-radius: 10px;
+	text-indent: 10px;
+	font-size: 20px;
+	font-family: "微软雅黑";
+}
+input[type=text]{
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	color: #000;
+	outline: none;
+}
+.text{
+	height: 50px;
+	line-height: 50px;
+	background-color: #000;
+	color: #fff;
+	margin-top: 20px;
+}
+.box{
+	margin: 0 auto;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+}
